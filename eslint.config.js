@@ -6,5 +6,9 @@ module.exports = defineConfig([
   expoConfig,
   {
     ignores: ['dist/*'],
+        rules: {
+      // Deshabilitar la advertencia de texto fuera de componentes Text
+      'react-native/no-raw-text': 'off',
+    }
   },
 ]);
