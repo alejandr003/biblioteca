@@ -1,6 +1,6 @@
 const EXPO_PUBLIC_API_URL = process.env.EXPO_PUBLIC_API_URL;
 
-async function loginAuth(email: string, password: string) {
+async function registerAuth(email: string, password: string, telefono: string) {
   try {
     console.log("Intentando login con la cuenta:", { email });
     
@@ -10,7 +10,7 @@ async function loginAuth(email: string, password: string) {
         "Content-Type": "application/json",
         "Accept": "application/json"
       },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ email, password, telefono }),
     });
     
     console.log("Respuesta del servidor:", response.status, response.statusText);
@@ -34,4 +34,4 @@ async function loginAuth(email: string, password: string) {
   }
 }
 
-export default loginAuth;
+export default registerAuth;
