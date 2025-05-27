@@ -41,10 +41,10 @@ const handleLogin = async () => {
       console.log(true);
       if (result.data) {
         const userName = result.data.email ? result.data.email.split('@')[0] : '';
-        alert(`Inicio de sesión exitoso.\nBienvenido ${userName}!`);
+        alert(`Bienvenido ${userName}!`);
         router.push({
           pathname: '/home/tabs/Home',
-          params: { user: result.data }
+          params: { userName: JSON.stringify(result.data) }
         });
       } else {
         alert('La respuesta del servidor no tiene el formato esperado');
