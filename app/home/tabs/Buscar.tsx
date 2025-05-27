@@ -1,4 +1,4 @@
-import BookService, { Book } from '@/components/API/BookService';
+import { BookService, Book } from '@/components/API/BookService';
 import React, { useState } from 'react';
 import { ActivityIndicator, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Searchbar, Title } from 'react-native-paper';

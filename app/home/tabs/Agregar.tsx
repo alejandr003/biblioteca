@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Alert, KeyboardAvoidingView, Platform, ScrollView, StyleSheet, View } from 'react-native';
 import { ActivityIndicator, Button, Chip, HelperText, TextInput, Title } from 'react-native-paper';
-import BookService from '@/components/API/BookService';
+import { BookService } from '@/components/API/BookService';
 
 const Agregar = () => {
   const [title, setTitle] = useState('');

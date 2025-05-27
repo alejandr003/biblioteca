@@ -1,4 +1,4 @@
-import BookService, { Book } from '@/components/API/BookService';
+import { BookService, Book } from '@/components/API/BookService';
 import BookCard from '@/components/BookCard';
 import React, { useEffect, useState } from 'react';
 import { ActivityIndicator, RefreshControl, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
